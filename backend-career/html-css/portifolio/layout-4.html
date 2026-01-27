@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portifolio - FlexBox - Layout 4</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: auto;
+            width: 99.1vw;
+        }
+
+        .main-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            /* align-items: center; */
+            /* align-content: center; */
+            /* flex-wrap: wrap; */
+            width: 100%;
+            height: auto;
+            background-color: #ffffff;
+            border: 0px dashed rgb(6, 47, 136);
+            padding: 0px;
+        }
+
+        .main-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            height: auto;
+            background-color: #ffffff;
+            border: 0px dashed rgb(6, 47, 136);
+            padding: 0px;
+        }
+
+        .square {
+            width: 300px;
+            height: 300px;
+        }
+
+        .red {
+            background-color: red;
+            order: 2;
+        }
+
+        .green {
+            background-color: green;
+            order: 1;
+        }
+
+        .blue {
+            background-color: blue;
+            order: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="main-1">
+        <section class="square red"></section>
+        <section class="square green"></section>
+        <section class="square blue"></section>
+    </main>
+
+    <main class="main-2">
+        <section class="square red"></section>
+        <section class="square green"></section>
+        <section class="square blue"></section>
+
+    </main>
+</body>
+
+</html>

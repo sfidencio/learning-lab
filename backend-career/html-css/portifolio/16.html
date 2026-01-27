@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout without scroll</title>
+    <!-- Emmet docs: https://docs.emmet.io/ -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid red;
+            color: white;
+        }
+        .box1 {
+            flex: 1 1 300px;
+            border: 1px solid blue;
+            margin: 5px;
+            padding: 5px;
+        }
+        .box2 {
+            flex: 4 1 500px;
+            border: 1px solid green;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>Content Box 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</p>
+        </div>
+        <div class="box2">
+            <h1>Content Box 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</p>
+        </div>
+    </div>
+</body>
+
+</html>

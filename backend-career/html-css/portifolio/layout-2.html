@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portifolio - FlexBox - Layout 2</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Firecode', monospace;
+            font-size: 3rem;
+            background-color: rgb(183, 139, 212);
+        }
+
+        .title {
+            color: navy;
+            font-family: 'Krona One', sans-serif;
+            font-weight: 400;
+        }
+
+        .presentation {
+            min-height: 100vh;
+            min-width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* padding: 0 20px; */
+            padding: 0 0px;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .about img {
+            border-radius: 60%;
+            border: 2px dashed rgb(4, 4, 219);
+            padding: 2px;
+            width: 300px;
+            height: auto;
+        }
+
+        .about p {
+            max-width: 700px;
+            font-size: 2.5rem;
+            text-align: justify;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            /* width: 100%; */
+            /* margin-top: auto; */
+        }
+
+        .links .github {
+            margin-top: 20px;
+            margin-right: 20px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 2rem;
+        }
+        .links .linkedin {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: navy;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 2rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <main class="presentation">
+        <h1>Building clean, <strong class="title">modern web experiences.</strong></h1>
+
+        <section class="about">
+            <img src="img/profile.png" alt="Foto de Sebastião Fidêncio">
+            <p>
+                Hi, I'm <strong class="title">Sebastião Fidêncio</strong>, a back-end developer, passionate about
+                creating efficient and scalable web applications. With expertise in server-side technologies and
+                databases, I strive to deliver seamless user experiences through robust back-end solutions.
+            </p>
+        </section>
+        <div class="links">
+            <!-- Links to social media or portfolio sections can be added here -->
+            <a href="#" class="github">GitHub</a>
+            <a href="#" class="linkedin">LinkedIn</a>
+        </div>
+    </main>
+</body>
+
+</html>

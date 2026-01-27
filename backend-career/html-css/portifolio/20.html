@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portifolio - FlexBox</title>
+    <!-- Emmet docs: https://docs.emmet.io/ -->
+    <!--css external-->
+    <style>
+        /*reset CSS styles*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+          
+            margin-left: 20px;
+        }
+
+        main > p {
+            margin-left: 20px;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            background-color: #6F4E37;
+            color: #F5F5F0
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: 'Fira Code', monospace;
+            color: #ffffff;
+            margin-left: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ECB176;
+            font-family: 'Fira Code', monospace;
+            border: 2px dotted #ffffff;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        strong {
+            color: #ECB176;
+        }
+
+        span {
+            color: #ECB176;
+            font-family: 'Fira Code', monospace;
+            font-weight: bold;
+            font-size: xx-large;
+            font-style: italic;
+        }
+
+        .highlight-portifolio {
+            color: #583636;
+        }
+
+
+        footer {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        header>h1 {
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome To My <strong class="highlight-portifolio">Portifolio</strong></h1>
+    </header>
+
+    <main class="conteiner">
+        <img src="img/profile.png" alt="Profile Picture" />
+        <p>My name is
+            <span>Sebastião Fidêncio,</span>
+            and I've been a software developer for over 10 years.
+        </p>
+    </main>
+    <footer>
+        <a target="_blank" href="https://www.linkedin.com/in/sfidencio/">Linkedin</a>
+        <a href="#">Instagram</a>
+    </footer>
+
+</body>
+
+</html>

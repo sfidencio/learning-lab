@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout without scroll</title>
+    <!-- Emmet docs: https://docs.emmet.io/ -->
+    <style>
+        * {
+            margin: 1px;
+            padding: 1px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(160, 133, 133);
+        }
+
+        /* .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            border: 1px solid red;
+            color: white;
+        } */
+        .container > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+   
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-family: 'Firacode', monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <a>Home</a>
+            <a>Projects</a>
+            <a>About me</a>
+        </div>
+    </div>
+</body>
+</html>

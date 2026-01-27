@@ -1,0 +1,59 @@
+/*
+ * reset CSS styles
+ */
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* padding and border are included in the total width calculation.*/
+}
+
+body {
+    height: 100vh;;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    background-color: #6F4E37;
+    color: #F5F5F0
+}
+
+h1 {
+    font-family: 'Fira Code', monospace;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Fira Code', monospace;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ECB176;
+    font-family: 'Fira Code', monospace;
+    border: 2px dotted #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+strong {
+    color: #ECB176;
+}
+
+span {
+    color: #ECB176;
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.highlight-portifolio {
+    color: #583636;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
