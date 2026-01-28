@@ -37,6 +37,17 @@ Para projetos completos e mais elaborados, confira meus outros repositórios:
 
 - [Em breve] - Projetos destacados virão aqui
 
+## 🔗 Links Importantes
+
+- [TechGuide](https://techguide.sh/) — guia/roadmap de estudos
+- [MDN Web Docs](https://developer.mozilla.org/) — referência de HTML/CSS/JS
+- [JavaScript (ECMAScript)](https://tc39.es/ecma262/) — especificação oficial
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) — guia oficial
+- [Node.js Docs](https://nodejs.org/docs/latest/api/) — API oficial
+- [React Docs](https://react.dev/) — documentação oficial
+- [Git Book](https://git-scm.com/book/en/v2) — guia de Git
+- [Docker Docs](https://docs.docker.com/) — documentação oficial
+
 ## 📫 Contato
 
 📧 sfidencio@gmail.com  
