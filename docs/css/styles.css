@@ -9,12 +9,15 @@
 
 
 body {
-    /* height: 100vh; */
+    height: auto;
     min-height: 100vh;
+    min-height: 100svh; /* Suporte para unidades de viewport em dispositivos móveis */
+    min-height: 100dvh; /* Suporte para unidades de viewport em dispositivos móveis */
     /* Garantir que o corpo ocupe pelo menos a altura total da viewport */
-    background-color: black;
+    background-color: rgb(34, 34, 34);
     color: white;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 strong {
@@ -26,6 +29,7 @@ strong {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(34, 34, 34);
 
     /* margin: 10%; */
     margin: 0 auto;
@@ -36,7 +40,9 @@ strong {
 
     /* padding: 0 20px; */
     padding: 40px 20px;
-    max-width: 1100px;
+    max-width: 1200px;
+
+
     /* Limitar a largura máxima para melhor legibilidade */
     gap: 32px;
     /* Espaçamento entre o texto e a imagem */
@@ -86,6 +92,8 @@ strong {
     border-radius: 50%;
     object-fit: cover;
     border: 5px dashed #22D4FD;
+
+    /* align-self: center; --> Centralizar verticalmente a imagem, ignorado o alinhamento do contêiner flex */
 
 }
 
@@ -149,7 +157,16 @@ strong {
     }
 
     .apresentacao__imagem {
-        width: min(250px, 80vw);
+        width: min(250px, 90vw);
+        margin-top: 0px;
+        align-self: center;
+    }
+
+    .apresentacao__botoes {
         margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 }
