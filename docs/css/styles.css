@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* height: 100vh; */
+    min-height: 100vh;
+    /* Garantir que o corpo ocupe pelo menos a altura total da viewport */
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+strong {
+    color: #22D4FD;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* margin: 10%; */
+    margin: 0 auto;
+
+
+    /* text-align: center; */
+    text-align: left;
+
+    /* padding: 0 20px; */
+    padding: 40px 20px;
+    max-width: 1100px;
+    /* Limitar a largura máxima para melhor legibilidade */
+    gap: 32px;
+    /* Espaçamento entre o texto e a imagem */
+    flex-wrap: wrap;
+    /* Permitir que os itens quebrem linha em telas menores */
+
+}
+
+.apresentacao__conteudo {
+
+    /* width: 800px; */
+    flex: 1 1 420px;
+    /* Permitir que o conteúdo cresça e encolha conforme necessário */
+    max-width: 800px;
+    /* Limitar a largura máxima do conteúdo */
+}
+
+.apresentacao__titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.apresentacao__titulo__destaque {
+    color: #22D4FD;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    /* max-width: 800px; */
+    max-width: 60ch;
+    /* Limitar a largura para melhor legibilidade */
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.apresentacao__imagem {
+    margin-top: 0px;
+    /* width: 500px;
+    height: 500px; */
+    flex: 0 1 320px;
+    /* Permitir que a imagem encolha conforme necessário */
+    width: min(320px, 80vw);
+    /* Ajustar a largura da imagem conforme a viewport */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px dashed #22D4FD;
+
+}
+
+.apresentacao__botao__linkedin {
+    margin-top: 0px;
+    padding: 10px 20px;
+    background-color: #22D4FD;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.1s ease;
+}
+
+.apresentacao__botao__linkedin:hover {
+    background-color: #1bb3d9;
+}
+
+.apresentacao__botao__github {
+    margin-top: 0px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.1s ease;
+}
+
+.apresentacao__botao__github:hover {
+    background-color: #555;
+}
+
+.apresentacao__botoes {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo {
+        max-width: 100%;
+    }
+
+    .apresentacao__titulo {
+        font-size: 1.8rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    .apresentacao__imagem {
+        width: min(250px, 80vw);
+        margin-top: 10px;
+    }
+}
