@@ -1,3 +1,4 @@
 {
-    "WhiteSource Advise.Diff.BaseBranch": "master"
+    "WhiteSource Advise.Diff.BaseBranch": "master",
+    "java.format.settings.url": "eclipse-formatter.xml"
 }
